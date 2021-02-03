@@ -1,0 +1,95 @@
+/* Box Model Hack */
+* {
+  -moz-box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+#root {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 4px 25px rgba(59, 1, 167, 0.1);
+  text-align: center;
+  background: white;
+}
+
+h1 {
+  background: linear-gradient(120deg, #c4b7e7 0%, #c3c6c9 100%);
+  margin: 0 0 1em 0;
+  padding: 0.4em;
+  color: white;
+  font-family: "Hachi Maru Pop", cursive;
+}
+
+p {
+  color: rgb(142, 145, 161);
+  font-family: "Nunito", sans-serif;
+  padding: 1em;
+}
+
+img {
+  display: block;
+  max-width: 30em;
+  margin: 0 auto;
+}
+
+html {
+  background: url("https://images.unsplash.com/photo-1519751138087-5bf79df62d5b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+
+  /* rgb(197, 212, 240); */
+}
+
+@media screen and (min-width: 600px) {
+  .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex: 1 1 calc(33% - 2rem);
+  }
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
